@@ -292,3 +292,40 @@ h2 {
     height: 15px;
     margin: auto;
 }
+.slider-selector {
+    position: absolute;
+    left: 863px;
+    top: 315px;
+}
+.slider-selector__input {
+    width: 1px;
+    height: 1px;
+}
+.slider-selector__label {
+    position: relative;
+    margin: 12px;
+}
+.slider-selector__label::before {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+}
+.slider-selector__input:checked + .slider-selector__label::after {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 10px;
+    border: 2px solid #C1C1C1;
+    background-color: whitesmoke;
+}
+
+
+
