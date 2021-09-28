@@ -56,6 +56,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    z-index: 1;
 }
 .slider-left {
     margin: 70px auto 60px 0;
@@ -164,6 +165,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    z-index: 1;
 }
 .about-us__right-bottom {
     text-align: start;
@@ -313,6 +315,7 @@ h2 {
     border-radius: 10px;
     border: 2px solid whitesmoke;
     background-color: whitesmoke;
+    z-index: 2;
 }
 .slider-selector__input:checked + .slider-selector__label::after {
     display: block;
@@ -325,7 +328,26 @@ h2 {
     border-radius: 10px;
     border: 2px solid #C1C1C1;
     background-color: whitesmoke;
+    z-index: 3;
 }
-
-
-
+.slider__div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.slider-selector__input:checked + .slider-selector__label + .slider__div {
+    display: block;
+}
+.slide {
+    position:absolute;
+    clip:rect(0 0 0 0);
+    overflow:hidden;
+}
+.wrapper2 {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
