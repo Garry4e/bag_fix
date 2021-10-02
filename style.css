@@ -50,6 +50,7 @@ a {
     margin: 0;
     background-color: #EEEEEE;
     position: relative;
+    height: 478px;
 }
 .wrapper {
     display: flex;
@@ -316,12 +317,12 @@ h2 {
     border: 2px solid whitesmoke;
     background-color: whitesmoke;
     z-index: 2;
+    top: 350px;
+    left: 680px;
 }
 .slider-selector__input:checked + .slider-selector__label::after {
     display: block;
     position: absolute;
-    top: 5px;
-    left: 5px;
     content: '';
     width: 4px;
     height: 4px;
@@ -329,16 +330,105 @@ h2 {
     border: 2px solid #C1C1C1;
     background-color: whitesmoke;
     z-index: 3;
+    top: 355px;
+    left: 685px;
 }
 .slider__div {
     position: absolute;
-    display: none;
+    display:none;
+    align-items: center;
+    width: 1157px;
 }
 .slider-selector__input:checked + .slider-selector__label + .slider__div {
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 .slide {
     position:absolute;
     clip:rect(0 0 0 0);
     overflow:hidden;
+}
+.form-window {
+    margin: 5% auto;
+    width: 960px;
+    min-height: 200px;
+    background-color: #FFF;
+    box-shadow: 0 20px 40px rgb(0 0 0 / 40%);
+}
+.form-container {
+    padding: 64px 100px 80px 100px;
+}
+.form-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.form-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 4px;
+}
+form {
+    display: block;
+}
+.form-name-and-email {
+    display: flex;
+    padding-bottom: 22px;
+}
+.form-name {
+    padding-right: 40px;
+}
+.form-email {
+    text-align: left;
+}
+.form-name__input, .form-email__input {
+    width: 340px;
+    height: 44px;
+    border: 2px solid #D7DCDE;
+    border-radius: 3px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.form-message {
+    padding-bottom: 63px;
+}
+.form-message__textarea {
+    width: 742px;
+    height: 97px;
+    border: 2px solid #D7DCDE;
+    border-radius: 3px;
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.form-window__link {
+    padding: 15px 85px 15px 85px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.close_x {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    right: 25px;
+}
+.close_x:hover {
+    opacity: 1;
+}
+.close_x:before, .close_x:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 25px;
+    width: 3px;
+    background-color: red;
+}
+.close_x:before {
+    transform: rotate(45deg);
+}
+.close_x:after {
+    transform: rotate(-45deg);
 }
