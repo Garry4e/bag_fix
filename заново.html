@@ -184,48 +184,47 @@
                 <p class="map-contact__phone">
                     тел. +7 (812) 275-75-75
                 </p>
-                <a class="map-contact__link red-bttn" href="#">НАПИШИТЕ НАМ</a>
+                <a href="#popup" class="map-contact__link red-bttn">НАПИШИТЕ НАМ</a>
             </div>
         </div>
         <img class="map-marker" src="./img/map-marker%201.png" alt="marker">
     </div>
-
-
-    <div class="form-window">
-        <div class="form-container">
-            <div class="form-top">
-                <p class="form-title">Напишите нам</p>
-                <div class="close">
-                    <a class="close_x" href="#"></a>
+<div id="popup" class="popup">
+        <div class="form-window">
+            <div class="form-container">
+                <div class="form-top">
+                    <p class="form-title">Напишите нам</p>
+                    <div class="close">
+                        <a class="close_x" href="#"></a>
+                    </div>
                 </div>
+
+                <form class="message">
+                    <div class="form-name-and-email">
+                        <div class="form-name">
+                            <label class="form-name__label">Ваше имя:
+                                <input class="form-name__input" type="text" name="name" placeholder="Имя Фамилия">
+                            </label>
+                        </div>
+
+                        <div class="form-email">
+                            <label class="form-email__label">Ваш email:
+                                <input class="form-email__input" type="email" name="email" placeholder="email@example.com">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-message">
+                        <label class="form-message__label">Текст письма:
+                            <textarea class="form-message__textarea" name="message"
+                                      placeholder="В свободной форме"></textarea>
+                        </label>
+                    </div>
+                    <button class="form-window__link red-bttn" type="submit">ОТПРАВИТЬ</button>
+                </form>
             </div>
-
-            <form class="message">
-                <div class="form-name-and-email">
-                    <div class="form-name">
-                        <label class="form-name__label">Ваше имя:
-                            <input class="form-name__input" type="text" name="name" placeholder="Имя Фамилия">
-                        </label>
-                    </div>
-
-                    <div class="form-email">
-                        <label class="form-email__label">Ваш email:
-                            <input class="form-email__input" type="email" name="email" placeholder="email@example.com">
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-message">
-                    <label class="form-message__label">Текст письма:
-                        <textarea class="form-message__textarea" name="message"
-                                  placeholder="В свободной форме"></textarea>
-                    </label>
-                </div>
-                <a class="form-window__link red-bttn" href="#">ОТПРАВИТЬ</a>
-            </form>
         </div>
-    </div>
-
+</div>
 
 </main>
 <footer class="footer">
