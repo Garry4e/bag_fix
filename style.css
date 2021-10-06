@@ -53,7 +53,7 @@ a {
     margin: 0;
     background-color: #EEEEEE;
     position: relative;
-    height: 478px;
+    height: 451px;
 }
 .wrapper {
     display: flex;
@@ -343,8 +343,6 @@ h2 {
 .slider__div {
     position: absolute;
     display:none;
-    align-items: center;
-    width: 1157px;
 }
 .slider-selector__input:checked + .slider-selector__label + .slider__div {
     display: flex;
@@ -360,7 +358,7 @@ h2 {
     width: 960px;
     min-height: 200px;
     background-color: #FFF;
-    box-shadow: 0 20px 40px rgba(0 0 0 / 0.8);
+    box-shadow: 0 20px 40px rgb(0 0 0 / 0.8);
 }
 .form-container {
     padding: 64px 100px 80px 100px;
